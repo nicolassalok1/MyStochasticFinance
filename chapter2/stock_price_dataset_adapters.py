@@ -13,7 +13,6 @@ class Frequency(enum.Enum):
     WEEKLY = "weekly"
     MONTHLY = "monthly"
 
-
 class StockPriceDatasetAdapter(metaclass=ABCMeta):
 
     """
