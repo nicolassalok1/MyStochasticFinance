@@ -1,0 +1,13 @@
+digraph "classes" {
+rankdir=BT
+charset="utf-8"
+"stochastic_finance_python_code.chapter8.finite_difference_methods.HeatEquationExplicitFDMSolver" [color="black", fontcolor="black", label="{HeatEquationExplicitFDMSolver|\l|}", shape="record", style="solid"];
+"stochastic_finance_python_code.chapter8.finite_difference_methods.HeatEquationExplicitFDMSolverTemplate" [color="black", fontcolor="black", label="{HeatEquationExplicitFDMSolverTemplate|\l|}", shape="record", style="solid"];
+"stochastic_finance_python_code.chapter8.finite_difference_methods.HeatEquationImplicitFDMSolverTemplate" [color="black", fontcolor="black", label="{HeatEquationImplicitFDMSolverTemplate|\l|}", shape="record", style="solid"];
+"stochastic_finance_python_code.chapter8.finite_difference_methods.SecondOrderFDMSolverTemplate" [color="black", fontcolor="black", label="{SecondOrderFDMSolverTemplate|\l|plot_solution()\lsolve()\l}", shape="record", style="solid"];
+"stochastic_finance_python_code.chapter8.finite_difference_methods.SecondOrderFDMSolverTemplate._Solution3DVisualizer" [color="black", fontcolor="black", label="{_Solution3DVisualizer|\l|plot_solution()\lprepare_solution_for_visual_analysis(u, x, t)\l}", shape="record", style="solid"];
+"stochastic_finance_python_code.chapter8.finite_difference_methods.HeatEquationExplicitFDMSolver" -> "stochastic_finance_python_code.chapter8.finite_difference_methods.HeatEquationExplicitFDMSolverTemplate" [arrowhead="empty", arrowtail="none"];
+"stochastic_finance_python_code.chapter8.finite_difference_methods.HeatEquationExplicitFDMSolverTemplate" -> "stochastic_finance_python_code.chapter8.finite_difference_methods.SecondOrderFDMSolverTemplate" [arrowhead="empty", arrowtail="none"];
+"stochastic_finance_python_code.chapter8.finite_difference_methods.HeatEquationImplicitFDMSolverTemplate" -> "stochastic_finance_python_code.chapter8.finite_difference_methods.SecondOrderFDMSolverTemplate" [arrowhead="empty", arrowtail="none"];
+"stochastic_finance_python_code.chapter8.finite_difference_methods.SecondOrderFDMSolverTemplate._Solution3DVisualizer" -> "stochastic_finance_python_code.chapter8.finite_difference_methods.SecondOrderFDMSolverTemplate" [arrowhead="diamond", arrowtail="none", fontcolor="green", label="_solution_viz", style="solid"];
+}

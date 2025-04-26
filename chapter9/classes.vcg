@@ -1,0 +1,39 @@
+graph:{
+  title:"classes"
+  layoutalgorithm:dfs
+  late_edge_labels:yes
+  port_sharing:no
+  manhattan_edges:yes
+  node: {title:"stochastic_finance_python_code.chapter8.finite_difference_methods.HeatEquationExplicitFDMSolver"  label:"\fbHeatEquationExplicitFDMSolver\fn\n\f_______________________________"
+  shape:box
+  }
+  node: {title:"stochastic_finance_python_code.chapter8.finite_difference_methods.HeatEquationExplicitFDMSolverTemplate"  label:"\fbHeatEquationExplicitFDMSolverTemplate\fn\n\f_______________________________________"
+  shape:box
+  }
+  node: {title:"stochastic_finance_python_code.chapter8.finite_difference_methods.HeatEquationImplicitFDMSolverTemplate"  label:"\fbHeatEquationImplicitFDMSolverTemplate\fn\n\f_______________________________________"
+  shape:box
+  }
+  node: {title:"stochastic_finance_python_code.chapter8.finite_difference_methods.SecondOrderFDMSolverTemplate"  label:"\fbSecondOrderFDMSolverTemplate\fn\n\f______________________________\n\f10plot_solution()\n\f10solve()"
+  shape:box
+  }
+  node: {title:"stochastic_finance_python_code.chapter8.finite_difference_methods.SecondOrderFDMSolverTemplate._Solution3DVisualizer"  label:"\fb_Solution3DVisualizer\fn\n\f______________________________________\n\f10plot_solution()\n\f10prepare_solution_for_visual_analysis()"
+  shape:box
+  }
+  edge: {sourcename:"stochastic_finance_python_code.chapter8.finite_difference_methods.HeatEquationExplicitFDMSolver" targetname:"stochastic_finance_python_code.chapter8.finite_difference_methods.HeatEquationExplicitFDMSolverTemplate"  arrowstyle:solid
+  backarrowstyle:none
+  backarrowsize:10
+  }
+  edge: {sourcename:"stochastic_finance_python_code.chapter8.finite_difference_methods.HeatEquationExplicitFDMSolverTemplate" targetname:"stochastic_finance_python_code.chapter8.finite_difference_methods.SecondOrderFDMSolverTemplate"  arrowstyle:solid
+  backarrowstyle:none
+  backarrowsize:10
+  }
+  edge: {sourcename:"stochastic_finance_python_code.chapter8.finite_difference_methods.HeatEquationImplicitFDMSolverTemplate" targetname:"stochastic_finance_python_code.chapter8.finite_difference_methods.SecondOrderFDMSolverTemplate"  arrowstyle:solid
+  backarrowstyle:none
+  backarrowsize:10
+  }
+  edge: {sourcename:"stochastic_finance_python_code.chapter8.finite_difference_methods.SecondOrderFDMSolverTemplate._Solution3DVisualizer" targetname:"stochastic_finance_python_code.chapter8.finite_difference_methods.SecondOrderFDMSolverTemplate"  arrowstyle:solid
+  backarrowstyle:none
+  textcolor:green
+  label:"_solution_viz"
+  }
+}
